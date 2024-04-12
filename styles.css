@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main{
+    border-bottom: 1px solid #ccc; /* Add a border at the bottom of the main content */
+    padding-bottom: 20px; /* Optional: Add some spacing between the main content and the line */
+}
+body{
+    background-color: whitesmoke;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 3rem 5%;
+
+}
+.banner {
+    position: relative;
+    height: 300px; /* Set the desired height for the banner */
+    background-image: url("pics/banner 2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .banner::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Adjust the alpha value for the darkness intensity */
+  }
+  
+  .banner h1.headingText,
+  .banner p.headingText {
+    position: relative; /* Make sure the text is on top of the dark overlay */
+    z-index: 1; /* Ensure the text appears above the dark overlay */
+    color: #fff; /* Add this line to set the text color to white, or any other desired color */
+  }
+img{
+    max-width: 100%;
+    height: 10rem;
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    
+}
+img.dish{
+    border-radius: 10%;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+.headingText{
+    color: white;
+}
+h1{
+    
+    font-size: 3rem;
+}
+h2{
+    font-size: 2rem;
+}
+p{
+    margin: 0.5rem;
+    font-size: 20px;
+}
+header > img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+nav ul {
+    list-style-type: none;
+    text-align: center;
+    background-color: #514F5B    ; /* Use the desired background color (burlywood) */
+    border-radius: 1rem;
+  }
+  
+  nav li {
+    display: inline-block; /* Display list items in a row */
+    margin: 0.5rem; /* Adjust the spacing between the list items */
+  }
+  
+  nav a {
+    display: block; /* Make the links fill the available space of the list item */
+    padding: 0.5rem 1rem; /* Add some padding to the links for better appearance */
+    text-decoration: none;
+    color: #ffffff; /* Set the text color to white or any other color you prefer */
+  }
+  
+  /* On hover, change the background color of the links for a cool effect */
+  nav a:hover {
+    background-color: rgb(158, 158, 158);
+    border-color: #c0bcbc;
+    border: 0.3rem;
+    border-radius: 0.2rem; /* Use a slightly different color when hovering */
+  }
+section{
+    display: flex;
+}
+article{
+    border: 2px solid #514F5B
+    ; /* Set the border color to a light coffee color */
+    border-radius: 15px; /* Set a border radius to create rounded edges */
+    padding: 1rem; /* Add some padding for spacing */
+    margin: 1rem;
+    text-align: center; /* Center the content */
+    width: 200px; /* Set the initial width for the section */
+    transition: all 0.3s linear; /* Add smooth transition effect */
+    background-color: #fff7842a; /* Set the background color to a light coffee color */
+    color: black; /* Set the text color */
+    flex: 1;
+}
+article:hover {
+    transform: scale(1.05); /* Enlarge the article on hover by 10% (1.1 times) */
+  }
+  footer {
+    display: flex;
+    justify-content: space-between; /* Use space-between to push the elements apart */
+    align-items: center;
+    padding: 10px;
+  }
+  
+  footer div {
+    flex: 1;
+  }
+  
+  .Copyright {
+    flex: 0; /* Prevent the text div from growing with flex: 1 */
+    flex-wrap: nowrap; /* Push the text to the right */
+  }
